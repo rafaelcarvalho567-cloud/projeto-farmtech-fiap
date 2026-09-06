@@ -1,0 +1,36 @@
+{% extends 'culturas/base.html' %}
+
+{% block titulo %}{{ titulo }} | FarmTech Solutions{% endblock %}
+
+{% block conteudo %}
+    <div class="form-card">
+        <h1>{{ titulo }}</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="nome">Nome da cultura</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: Soja"
+                   value="{{ cultura.nome|default:'' }}" required>
+
+            <div class="form-row">
+                <div>
+                    <label for="largura">Largura (m)</label>
+                    <input type="number" step="0.01" id="largura" name="largura"
+                           value="{{ cultura.largura|default:'' }}" required>
+                </div>
+                <div>
+                    <label for="comprimento">Comprimento (m)</label>
+                    <input type="number" step="0.01" id="comprimento" name="comprimento"
+                           value="{{ cultura.comprimento|default:'' }}" required>
+                </div>
+            </div>
+
+            <label for="ruas">Quantidade de ruas</label>
+            <input type="number" id="ruas" name="ruas" value="{{ cultura.ruas|default:'' }}" required>
+
+            <div class="form-actions">
+                <a href="{% url 'home' %}" class="btn btn-outline">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

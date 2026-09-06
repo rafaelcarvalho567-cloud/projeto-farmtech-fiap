@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}FarmTech Solutions{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'culturas/css/style.css' %}">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-container">
+            <a href="{% url 'home' %}" class="brand">
+                <span class="brand-leaf">&#127807;</span> FarmTech Solutions
+            </a>
+            <nav class="navlinks">
+                <a href="{% url 'home' %}">Culturas</a>
+                <a href="{% url 'estatisticas' %}">Estatísticas</a>
+                <a href="{% url 'clima' %}">Clima</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li class="message {{ message.tags }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% block conteudo %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>FarmTech Solutions &mdash; Agricultura Digital &amp; Sustentabilidade</p>
+    </footer>
+
+    <script src="{% static 'culturas/js/script.js' %}"></script>
+</body>
+</html>

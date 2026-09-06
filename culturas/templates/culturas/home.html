@@ -1,0 +1,38 @@
+{% extends 'culturas/base.html' %}
+
+{% block titulo %}Culturas | FarmTech Solutions{% endblock %}
+
+{% block conteudo %}
+    <div class="page-header">
+        <div>
+            <h1>Culturas Cadastradas</h1>
+            <p class="subtitulo">Gerencie a área de plantio e o manejo das suas lavouras.</p>
+        </div>
+        <a href="{% url 'nova_cultura' %}" class="btn btn-primary">+ Nova Cultura</a>
+    </div>
+
+    {% if culturas %}
+        <div class="card-grid">
+            {% for cultura in culturas %}
+                <div class="card">
+                    <div class="card-icon">&#127806;</div>
+                    <h2>{{ cultura.nome }}</h2>
+                    <ul class="card-info">
+                        <li><strong>Área:</strong> {{ cultura.area|floatformat:2 }} m²</li>
+                        <li><strong>Ruas:</strong> {{ cultura.ruas }}</li>
+                        <li><strong>Dimensões:</strong> {{ cultura.largura }}m &times; {{ cultura.comprimento }}m</li>
+                    </ul>
+                    <div class="card-actions">
+                        <a href="{% url 'editar_cultura' cultura.pk %}" class="btn btn-outline">Editar</a>
+                        <a href="{% url 'deletar_cultura' cultura.pk %}" class="btn btn-danger">Excluir</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="empty-state">
+            <p>&#127793; Nenhuma cultura cadastrada ainda.</p>
+            <a href="{% url 'nova_cultura' %}" class="btn btn-primary">Cadastrar a primeira cultura</a>
+        </div>
+    {% endif %}
+{% endblock %}

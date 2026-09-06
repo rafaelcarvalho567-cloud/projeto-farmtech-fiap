@@ -1,0 +1,25 @@
+{% extends 'culturas/base.html' %}
+
+{% block titulo %}Clima | FarmTech Solutions{% endblock %}
+
+{% block conteudo %}
+    <div class="page-header">
+        <div>
+            <h1>Dados Climáticos</h1>
+            <p class="subtitulo">Digite o nome de uma cidade brasileira ou um CEP para consultar o clima.</p>
+        </div>
+    </div>
+
+    <div class="form-card">
+        <form id="form-clima">
+            <label for="cidade_cep">Cidade (ex: Ribeirão Preto, SP) ou CEP</label>
+            <input type="text" id="cidade_cep" placeholder="Ex: Ribeirão Preto, SP ou 14010-000" required>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Consultar Clima</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="resultado-clima" class="stats-grid"></div>
+{% endblock %}

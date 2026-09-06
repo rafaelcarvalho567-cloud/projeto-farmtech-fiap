@@ -1,0 +1,47 @@
+{% extends 'culturas/base.html' %}
+
+{% block titulo %}Estatísticas | FarmTech Solutions{% endblock %}
+
+{% block conteudo %}
+    <div class="page-header">
+        <div>
+            <h1>Estatísticas das Culturas</h1>
+            <p class="subtitulo">Média e desvio padrão de área e ruas (equivalente ao script em R).</p>
+        </div>
+    </div>
+
+    {% if tem_dados %}
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Área de Plantio</h3>
+                <p><span class="stat-label">Média</span> <span class="stat-value">{{ media_area }} m²</span></p>
+                <p><span class="stat-label">Desvio padrão</span> <span class="stat-value">{{ desvio_area }}</span></p>
+            </div>
+            <div class="stat-card">
+                <h3>Quantidade de Ruas</h3>
+                <p><span class="stat-label">Média</span> <span class="stat-value">{{ media_ruas }}</span></p>
+                <p><span class="stat-label">Desvio padrão</span> <span class="stat-value">{{ desvio_ruas }}</span></p>
+            </div>
+        </div>
+
+        <table class="tabela">
+            <thead>
+                <tr><th>Cultura</th><th>Área (m²)</th><th>Ruas</th></tr>
+            </thead>
+            <tbody>
+                {% for cultura in culturas %}
+                    <tr>
+                        <td>{{ cultura.nome }}</td>
+                        <td>{{ cultura.area|floatformat:2 }}</td>
+                        <td>{{ cultura.ruas }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class="empty-state">
+            <p>&#128202; Cadastre pelo menos uma cultura para ver as estatísticas.</p>
+            <a href="{% url 'nova_cultura' %}" class="btn btn-primary">Cadastrar cultura</a>
+        </div>
+    {% endif %}
+{% endblock %}
