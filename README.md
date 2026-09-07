@@ -24,9 +24,9 @@
 
 - <a href="https://www.linkedin.com/in/henrico-fernandes-62a943421/">Henrico Fernandes</a>
 - <a href="https://www.linkedin.com/in/rafael-carvalho-8b3316153/">Rafael Victor Silva de Carvalho</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Raphael Bruno Lopes Silva</a>
+- <a href="https://www.linkedin.com/in/raphael-bruno-59b504142/">Raphael Bruno Lopes Silva</a>
 - <a href="https://www.linkedin.com/company/inova-fusca">Rogério da Silva Rêgo</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Vitor Verdu</a>
+- <a href="https://www.linkedin.com/in/vitor-bernardo-verdu-8668b9234/">Vitor Verdu</a>
 
 ## 👩‍🏫 Professores:
 
