@@ -13,7 +13,7 @@
 ## 👨‍🎓 Integrantes: 
 <p>
 - <a href="https://www.linkedin.com/in/henrico-fernandes-62a943421/" > Henrico Fernandes </a><p>
-- <a href="www.linkedin.com/in/rafael-carvalho-8b3316153"> Rafael Victor Silva de Carvalho </a><p>
+- <a href="https://www.linkedin.com/in/rafael-carvalho-8b3316153/"> Rafael Victor Silva de Carvalho </a><p>
 - <a href="https://www.linkedin.com/company/inova-fusca"> Raphael Bruno Lopes Silva </a><p>
 - <a href="https://www.linkedin.com/company/inova-fusca"> Rogério da Silva Rêgo </a><p>
 - <a href="https://www.linkedin.com/company/inova-fusca"> Vitor Verdu</a><p>
