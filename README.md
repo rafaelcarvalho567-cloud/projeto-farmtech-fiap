@@ -8,6 +8,7 @@
 
 # Nome do projeto
 <h1> Farm Tech Solutions <h1>
+<h3> <a href="https://projeto-farmtech-fiap.onrender.com/"> Clique aqui</a> para ver a página do projeto <h3>
 ## Nome do grupo
 <h2>Grupo Sinerg-IA<h2>
 ## 👨‍🎓 Integrantes: 
@@ -27,7 +28,7 @@
 
 ## 📜 Descrição
 
-*O FarmTech Solutions é um projeto que aplica tecnologia da informação ao agronegócio, propondo soluções digitais para otimizar o monitoramento e a gestão de plantações. A proposta integra sensores, coleta de dados e análise computacional para apoiar decisões como irrigação, adubação e manejo de pragas, tornando a produção agrícola mais eficiente e sustentável. Através de bancos de dados, algoritmos e, futuramente, inteligência artificial, o projeto busca transformar dados de campo em informações estratégicas para produtores rurais, unindo agricultura de precisão e inovação tecnológica.*
+*O <a href="https://projeto-farmtech-fiap.onrender.com/"> FarmTech Solutions</a> é um projeto que aplica tecnologia da informação ao agronegócio, propondo soluções digitais para otimizar o monitoramento e a gestão de plantações. A proposta integra sensores, coleta de dados e análise computacional para apoiar decisões como irrigação, adubação e manejo de pragas, tornando a produção agrícola mais eficiente e sustentável. Através de bancos de dados, algoritmos e, futuramente, inteligência artificial, o projeto busca transformar dados de campo em informações estratégicas para produtores rurais, unindo agricultura de precisão e inovação tecnológica.*
 
 
 ## 📁 Estrutura de pastas
@@ -49,7 +50,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
 ## 🔧 Como executar o código
-
+<p> Para visualizar a página do projeto <a href="https://projeto-farmtech-fiap.onrender.com/"> clique aqui!</a>
 
 
 ## 🗃 Histórico de lançamentos
